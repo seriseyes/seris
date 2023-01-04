@@ -1,0 +1,89 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 14px;
+
+    font-size: 1rem;
+
+    border: none;
+    cursor: pointer;
+
+    border-radius: 4px;
+    font-weight: var(--default-weight);
+    transition: all 0.15s;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.button:active {
+    box-shadow: 0 0 31px -10px black;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.buttonPrimaryDefault {
+    background-color: var(--primary);
+    color: var(--default-color);
+}
+
+.buttonPrimarySuccess {
+    background-color: var(--success);
+    color: var(--default-color);
+}
+
+.buttonPrimaryDanger {
+    background-color: var(--danger);
+    color: var(--default-color);
+}
+
+.buttonPrimaryWarning {
+    background-color: var(--warning);
+    color: var(--default-color);
+}
+
+.buttonSecondaryDefault {
+    background-color: #F3F5F7;
+    color: var(--primary);
+}
+
+.buttonSecondarySuccess {
+    background-color: #F3F5F7;
+    color: var(--success);
+}
+
+.buttonSecondaryDanger {
+    background-color: #F3F5F7;
+    color: var(--danger);
+}
+
+.buttonSecondaryWarning {
+    background-color: #F3F5F7;
+    color: var(--warning);
+}
+
+.buttonTertiaryDefault {
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.buttonTertiarySuccess {
+    background-color: transparent;
+    color: var(--success);
+}
+
+.buttonTertiaryDanger {
+    background-color: transparent;
+    color: var(--danger);
+}
+
+.buttonTertiaryWarning {
+    background-color: transparent;
+    color: var(--warning);
+}

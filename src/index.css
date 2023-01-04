@@ -1,0 +1,17 @@
+:root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+
+    --main: white;
+
+    --default-color: #F5F9FF;
+    --default-text: #233348;
+    --default-weight: 550;
+
+    --primary: #4F46E5;
+    --danger: #E0241A;
+    --success: #158443;
+    --warning: #F7C600;
+}
