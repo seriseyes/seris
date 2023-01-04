@@ -10,6 +10,7 @@ import SelectField from "../../components/inputs/selects/SelectField";
 import DateField from "../../components/inputs/dates/DateField";
 import React from "react";
 import DateRangeField from "../../components/inputs/dates/DateRangeField";
+import ChartLine from "../../components/charts/ChartLine";
 
 interface Animal {
     value: string;
@@ -140,6 +141,10 @@ export default function ComponentList() {
                 onChange={(e => console.log(e))}
                 caption={"Range"}
             />
+        </Row>
+        <H1 value={"Line Chart"}/>
+        <Row style={{height: "700px"}}>
+            <ChartLine/>
         </Row>
     </Col>
 }
