@@ -5,6 +5,7 @@ import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Menu from "./views/menu/Menu";
 import Home from "./views/home/Home";
+import "react-datepicker/dist/react-datepicker.css";
 
 const router = createBrowserRouter([
     {

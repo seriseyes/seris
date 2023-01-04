@@ -2,10 +2,14 @@ import Button from "../../components/buttons/Button";
 import {Style, Variant} from "../../components/Declares";
 import {TiHeartFullOutline} from 'react-icons/ti';
 import {BiSearchAlt2} from "react-icons/bi";
+import {MdOutlineUpdate} from "react-icons/md";
 import Row from "../../components/layouts/Row";
 import Col from "../../components/layouts/Col";
 import TextField from "../../components/inputs/textfields/TextField";
 import SelectField from "../../components/inputs/selects/SelectField";
+import DateField from "../../components/inputs/dates/DateField";
+import React from "react";
+import DateRangeField from "../../components/inputs/dates/DateRangeField";
 
 interface Animal {
     value: string;
@@ -112,6 +116,29 @@ export default function ComponentList() {
                          helper={<div style={{display: "flex", gap: "4px"}}>Helper text: <div
                              style={{color: "red"}}>required</div></div>}
                          placeholder={"required"}
+            />
+        </Row>
+        <H1 value={"DateFields"}/>
+        <Row gap={"10"} style={{alignItems: "flex-end"}}>
+            <DateField
+                caption={"Date"}
+            />
+            <DateField
+                caption={"Date + Time"}
+                time={true}
+            />
+            <DateField
+                caption={"Date + Time + Icon"}
+                time={true}
+                helper={<div style={{display: "flex", gap: "4px"}}>Helper text: <div
+                    style={{color: "red"}}>required</div></div>}
+                placeholder={"required"}
+                required={true}
+                icon={<MdOutlineUpdate/>}
+            />
+            <DateRangeField
+                onChange={(e => console.log(e))}
+                caption={"Range"}
             />
         </Row>
     </Col>

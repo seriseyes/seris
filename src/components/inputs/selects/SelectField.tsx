@@ -1,6 +1,4 @@
 import css from "../textfields/TextField.module.css";
-import Row from "../../layouts/Row";
-import {InputType} from "../../Declares";
 import Col from "../../layouts/Col";
 import React from "react";
 import Select from "react-select";
